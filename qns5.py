@@ -14,45 +14,26 @@ def button_clear():
 def button_add():
     first_number=e.get()
     global f_num
-    global math
-    math="addition"
     f_num=int(first_number)
     e.delete(0, END)
 def button_equal():
     second_number=e.get()
     e.delete(0, END)
 
-    if math=="addition":
-        e.insert(0, f_num + int(second_number))
-
-    if math == "subtraction":
-        e.insert(0, f_num -int(second_number))
-
-    if math == "multiply":
-        e.insert(0, f_num *int(second_number))
-
-    if math == "divide":
-         e.insert(0, f_num /int(second_number))
 
 def button_subtract():
     first_number = e.get()
     global f_num
-    global math
-    math = "subtraction"
     f_num = int(first_number)
     e.delete(0, END)
 def button_muliply():
     first_number = e.get()
     global f_num
-    global math
-    math = "multiply"
     f_num = int(first_number)
     e.delete(0, END)
 def button_divide():
     first_number = e.get()
     global f_num
-    global math
-    math = "divide"
     f_num = int(first_number)
     e.delete(0, END)
 # Define Buttons
